@@ -1,0 +1,36 @@
+/******************************************************************************
+Solicita 5 artículos y agrega el IVA
+Nombre: Elisa Michelle Medina Vázquez
+Fecha:160422
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //variables
+    float articulo1,articulo2,articulo3,articulo4,articulo5,precioTot,precioIVA;
+    int iva=0.6;
+    
+    //proceso
+    cout<<"Introduzca el precio del primer articulo ";
+    cin>>articulo1;
+    cout<<"Introduce el precio del segundo articulo ";
+    cin>>articulo2;
+    cout<<"Introduce el precio del tercer articulo ";
+    cin>>articulo3;
+    cout<<"Introduce el precio del cuarto articulo ";
+    cin>>articulo4;
+    cout<<"Introduce el precio del quinto articulo ";
+    cin>>articulo5;
+    
+    precioTot=articulo1+articulo2+articulo3+articulo4+articulo5;
+    precioIVA=precioTot*0.6;
+    
+    cout<<"El precio con IVA incuido es "<<precioIVA<<endl;
+    
+    return 0;
+}
+
+
